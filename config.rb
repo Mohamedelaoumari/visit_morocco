@@ -54,6 +54,7 @@ activate :external_pipeline,
 
 activate :dotenv
 activate :meta_tags
+activate :directory_indexes
 
 # Layouts
 # https://middlemanapp.com/basics/layouts
@@ -61,6 +62,7 @@ activate :meta_tags
 page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
