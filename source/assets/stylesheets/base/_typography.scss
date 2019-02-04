@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+
+
+// To use a font file (.woff) uncomment following lines
+// @font-face {
+//   font-family: "Bebas Neue W01";
+//   src: font-url('Bebas-Neue-W01.eot');
+//   src: font-url('Bebas-Neue-W01.eot?#iefix') format('embedded-opentype'),
+//        font-url('Bebas-Neue-W01.woff') format('woff'),
+//        font-url('Bebas-Neue-W01.ttf') format('truetype')
+// }
+
+// Define fonts for body and headers
+$body-font: "Lato", "Helvetica", "sans-serif";
+$headers-font: "Lato", "Helvetica", "sans-serif";
+
+body {
+  letter-spacing: 0.3px;
+}
+
+h4,
+h5 {
+  letter-spacing: -0.2px;
+}
+
+
+.x-small {
+  font-size: 70%;
+}
