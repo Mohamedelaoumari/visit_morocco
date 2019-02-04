@@ -1,9 +1,10 @@
 body {
-  background-color: $yellow;
   color: $black;
   font-family: $font-family-base;
-  padding: 18vh 1rem;
   text-align: center;
+  margin: 0;
+  overflow-x: hidden !important;
+  min-height: 100vh;
 }
 a {
   color: rgba(#000, 0.7);
