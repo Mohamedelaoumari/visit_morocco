@@ -4,9 +4,12 @@
     <%= auto_display_meta_tags %>
     <%= auto_display_favicon_tags if build? %>
     <%= stylesheet_link_tag "all" %>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fahkwang|Montserrat" rel="stylesheet">
   </head>
 
   <body>
+    <%= partial 'pages/shared/navbar' %>
     <%= yield %>
 
     <%= javascript_include_tag "bundle" %>

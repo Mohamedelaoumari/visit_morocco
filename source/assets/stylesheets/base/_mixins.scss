@@ -1,0 +1,77 @@
+@mixin responsive-square {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: relative;
+    display: block;
+    padding-bottom: 50%;
+  }
+}
+
+@mixin fullscreen-menu($direction) {
+  position: fixed;
+  height: calc(100vh - #{$navbar-height});
+  width: 100vw;
+  z-index: 1050;
+  padding: 0.5em 1rem;
+  transition: #{$direction} 0.2s ease-in-out;
+  overflow-y: scroll;
+
+  @if $direction == 'left' or $direction == 'right' {
+    #{$direction}: -100vw;
+    top: $navbar-height;
+    transition: #{$direction} 0.2s ease-in-out;
+  }
+
+  @if $direction == 'top' or $direction == 'bottom' {
+    #{$direction}: calc(-100vh + #{$navbar-height});
+    left: 0;
+    transition: #{$direction} 0.3s ease-in-out;
+  }
+
+  > * {
+    z-index: 2;
+  }
+
+  &.expanded {
+    #{$direction}: 0;
+    display: block;
+  }
+}
+
+@mixin icon-expand-animation {
+  span {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &.expanded {
+    span:first-child {
+      transform: rotate(45deg);
+      top: 50%;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    span:nth-child(2) {
+      transform: rotate(-45deg);
+      top: 50%;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    span:last-child {
+      width: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+}

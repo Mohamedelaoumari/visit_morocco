@@ -1,0 +1,33 @@
+.icon-menu {
+  @include responsive-square;
+  @include icon-expand-animation;
+  width: 25px;
+  height: 25px;
+  span {
+    pointer-events: none;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    border: none;
+    left: 0;
+    pointer-events: none;
+    border-radius: 2px;
+    &.white {
+      background-color: $white;
+    }
+    &.gray {
+      background-color: $gray;
+    }
+  }
+  span:first-child {
+    top: 5px;
+  }
+
+  span:nth-child(2) {
+    top: calc(50% - 1px);
+  }
+
+  span:last-child {
+    bottom: 5px;
+  }
+}

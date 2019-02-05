@@ -1,0 +1,12 @@
+@each $direction in $directions {
+  .menu-#{$direction} {
+    @include fullscreen-menu($direction);
+  }
+}
+
+#main-menu {
+  background-color: $white;
+  a {
+    color: $gray;
+  }
+}

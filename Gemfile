@@ -16,3 +16,6 @@ gem 'middleman-robots'
 gem 'pry-byebug'
 gem 'rake'
 gem 'rubocop'
+
+# Design
+gem 'font-awesome-middleman'

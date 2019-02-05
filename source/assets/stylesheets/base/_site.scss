@@ -1,17 +1,10 @@
 body {
-  color: $black;
+  color: $gray;
   font-family: $font-family-base;
   text-align: center;
   margin: 0;
   overflow-x: hidden !important;
   min-height: 100vh;
-}
-a {
-  color: rgba(#000, 0.7);
-  &:focus,
-  &:hover {
-    color: rgba(#000, 0.6);
-  }
 }
 .middleman-logo {
   width: 12rem;

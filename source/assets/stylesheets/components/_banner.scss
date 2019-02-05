@@ -1,18 +1,29 @@
 .banner {
-  height: 100vh;
   background-size: cover !important;
   background: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
-  url(https://images.unsplash.com/photo-1541919635-250e08fbdd21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  &.main {
+    background-attachment: fixed;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+    url(https://images.unsplash.com/photo-1541919635-250e08fbdd21?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+    p {
+      letter-spacing: 12px;
+      font-size: 24px;
+    }
+  }
+  &.medium {
+    height: 70vh;
+  }
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: $white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-weight: bold;
   letter-spacing: 24px;
@@ -20,10 +31,8 @@
 }
 
 .banner p {
-  font-size: 24px;
   font-weight: lighter;
-  color: white;
+  color: $white;
   opacity: .9;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  letter-spacing: 12px;
 }
