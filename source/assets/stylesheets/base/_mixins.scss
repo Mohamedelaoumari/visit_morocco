@@ -1,0 +1,12 @@
+@mixin responsive-square {
+  position: relative;
+  display: block;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: relative;
+    display: block;
+    padding-bottom: 100%;
+  }
+}

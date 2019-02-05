@@ -1,0 +1,22 @@
+.white-button {
+  background-color: transparent;
+  border-radius: 25px;
+  padding: 8px 15px;
+  border: 1px solid $white;
+  color: $white;
+  font-weight: lighter;
+  &:hover {
+    transition: 0.6s;
+    text-decoration: none;
+    color: $gray;
+    background-color: $white;
+  }
+}
+
+.square-button {
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid $white;
+  color: $white;
+  font-weight: lighter;
+}

@@ -1,0 +1,51 @@
+.navbar-zagora {
+  transition: all 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  height: 70px;
+}
+.navbar-zagora-transparent {
+  background-color: transparent;
+  transition: 0.8s ease;
+  h1, a, p {
+    color: $white;
+  }
+}
+
+.navbar-zagora-filled {
+  background-color: $white;
+  transition: 0.8s ease;
+  color: $gray;
+  h1, a, p {
+    color: $gray;
+  }
+}
+.navbar-zagora .brand {
+  width: 40px;
+}
+
+.navbar-zagora .navbar-zagora-actions {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-zagora .navbar-zagora-actions .navbar-zagora-link {
+  margin-left: 24px;
+  // color: $white;
+  transition: 0.3s;
+  &:hover {
+    text-decoration: none;
+    opacity: .7;
+    transition: 0.3s;
+  }
+}
+
+// .navbar-zagora .navbar-zagora-actions .avatar {
+//   margin-left: 24px;
+// }
+
+.navbar-zagora .dropdown-toggle {
+  cursor: pointer;
+}

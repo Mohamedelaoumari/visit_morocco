@@ -1,8 +1,19 @@
 <% set_meta_tags title: data.site.name + ": " + data.site.description,
                  full_title: false %>
 <div class="banner">
-  <div class="container">
+  <div class="container forefront-contain">
     <h1>ZAGORA</h1>
-    <p>Experience the desert</p>
+    <p>Experience the desert <%= current_page.data.title %></p>
+    <%= current_page.data.title %>
+  </div>
+</div>
+
+<div class="home-section">
+  <div class="container">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ut veniam, distinctio vel excepturi molestiae laudantium incidunt maiores eligendi quae dicta culpa sint quasi soluta hic similique nulla error. Similique.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ut veniam, distinctio vel excepturi molestiae laudantium incidunt maiores eligendi quae dicta culpa sint quasi soluta hic similique nulla error. Similique.
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ut veniam, distinctio vel excepturi molestiae laudantium incidunt maiores eligendi quae dicta culpa sint quasi soluta hic similique nulla error. Similique.
+    </p>
   </div>
 </div>
