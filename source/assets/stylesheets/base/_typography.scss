@@ -17,7 +17,13 @@ $headers-font: "Montserrat", "Helvetica", "sans-serif";
 body {
   letter-spacing: 0.3px;
 }
+a {
+  cursor: pointer;
 
+  * {
+    pointer-events: none;
+  }
+}
 h4,
 h5 {
   letter-spacing: -0.2px;

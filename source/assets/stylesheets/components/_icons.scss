@@ -1,7 +1,8 @@
-.icon-burger {
+.icon-menu {
   @include responsive-square;
   @include icon-expand-animation;
-
+  width: 25px;
+  height: 25px;
   span {
     pointer-events: none;
     position: absolute;
@@ -24,7 +25,5 @@
 
   span:last-child {
     bottom: 5px;
-    width: 50%;
   }
-
 }
