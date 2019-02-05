@@ -3,3 +3,10 @@
     @include fullscreen-menu($direction);
   }
 }
+
+#main-menu {
+  background-color: $white;
+  a {
+    color: $gray;
+  }
+}

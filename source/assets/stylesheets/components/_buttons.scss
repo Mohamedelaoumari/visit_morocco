@@ -1,15 +1,28 @@
-.white-button {
-  background-color: transparent;
+.oval-button {
   border-radius: 25px;
   padding: 8px 15px;
-  border: 1px solid $white;
-  color: $white;
   font-weight: lighter;
-  &:hover {
-    transition: 0.6s;
-    text-decoration: none;
+  &.white {
+    background-color: transparent;
+    color: $white;
+    border: 1px solid $white;
+    &:hover {
+      transition: 0.6s;
+      text-decoration: none;
+      color: $gray;
+      background-color: $white;
+    }
+  }
+  &.gray {
+    background-color: transparent;
     color: $gray;
-    background-color: $white;
+    border: 1px solid $gray;
+    &:hover {
+      transition: 0.6s;
+      text-decoration: none;
+      color: $white;
+      background-color: $gray;
+    }
   }
 }
 

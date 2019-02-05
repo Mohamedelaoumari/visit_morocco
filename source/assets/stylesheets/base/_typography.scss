@@ -11,11 +11,16 @@
 // }
 
 // Define fonts for body and headers
-$body-font: "Fahkwang", "sans-serif";
-$headers-font: "Montserrat", "Helvetica", "sans-serif";
+$body-font: "Montserrat", "Helvetica", "sans-serif";
+$headers-font: "Fahkwang", "Helvetica", "sans-serif";
 
 body {
   letter-spacing: 0.3px;
+  h4 {
+    color: $orange;
+    font-weight: lighter;
+    letter-spacing: 3px;
+  }
 }
 a {
   cursor: pointer;
@@ -28,7 +33,6 @@ h4,
 h5 {
   letter-spacing: -0.2px;
 }
-
 
 .x-small {
   font-size: 70%;
