@@ -8,7 +8,7 @@
 }
 .navbar-zagora-transparent {
   background-color: transparent;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
   h1, a, p {
     color: $white;
   }
@@ -16,7 +16,7 @@
 
 .navbar-zagora-filled {
   background-color: $white;
-  transition: 0.8s ease;
+  transition: 0.5s ease;
   color: $gray;
   h1, a, p {
     color: $gray;
