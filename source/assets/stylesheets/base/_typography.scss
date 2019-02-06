@@ -16,8 +16,13 @@ $headers-font: "Fahkwang", "Helvetica", "sans-serif";
 
 body {
   letter-spacing: 0.3px;
+  h2 {
+    color: $white;
+    padding: 35px;
+  }
   h4 {
     color: $orange;
+    font-size: 20px;
     font-weight: lighter;
     letter-spacing: 3px;
   }
