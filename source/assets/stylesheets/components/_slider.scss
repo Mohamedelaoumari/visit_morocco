@@ -2,10 +2,14 @@
   margin-right: -6rem;
   display: inline-block;
   display: flex;
+  p {
+    opacity: 1;
+  }
   button {
     color: $white;
     transition: .4s ease;
     opacity: 0.7;
+    cursor: pointer;
     &:hover {
       opacity: 1;
       color: $white;
@@ -62,6 +66,7 @@
 
     li.slick-active button {
       background-color: $white;
+      &:focus {outline:0;}
     }
 
 }
