@@ -16,12 +16,17 @@
   </div>
 </div>
 
-<div class="banner medium" style="background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),
+<div class="banner medium" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
     url(https://images.unsplash.com/photo-1545167496-31b3aa75296c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
   <div class="container">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ut veniam, distinctio vel excepturi molestiae laudantium incidunt maiores eligendi quae dicta culpa sint quasi soluta hic similique nulla error. Similique.
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit ut veniam, distinctio vel excepturi molestiae laudantium incidunt maiores eligendi quae dicta culpa sint quasi soluta hic similique nulla error. Similique.
-    </p>
+    <h2>What our guest say about us</h2>
+      <div class="container single-slider single-item">
+        <% data.testimonials.each do |testimonial| %>
+        <div>
+          <p><%= testimonial.content %></p>
+          <p><%= testimonial.author %></p>
+        </div>
+        <% end %>
+      </div>
   </div>
 </div>
