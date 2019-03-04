@@ -6,10 +6,11 @@
     <% end %>
   </div>
   <div class="navbar-zagora-actions d-none d-sm-flex">
-    <a href="#" class="navbar-zagora-link">Tours</a>
+    <a href="#" class="navbar-zagora-link">About us</a>
+    <%= link_to "Tours", "/tours", class: "navbar-zagora-link" %>
     <a href="#" class="navbar-zagora-link">Team</a>
     <a href="#" class="navbar-zagora-link">fuck</a>
-    <a href="#" class="navbar-zagora-link">shit</a>
+    <%= link_to "Contact", "/contact", class: "navbar-zagora-link" %>
   </div>
 
   <!--   displayed on smartphone -->
@@ -23,9 +24,9 @@
 
   <div class="navbar-zagora-actions">
     <% if homepage? %>
-      <%= link_to "Let's talk", "/booking", class: "oval-button white" %>
+      <%= link_to "Let's talk", "/contact", class: "oval-button white" %>
     <% else %>
-      <%= link_to "Let's talk", "/booking", class: "oval-button gray" %>
+      <%= link_to "Let's talk", "/contact", class: "oval-button gray" %>
     <% end %>
   </div>
 
