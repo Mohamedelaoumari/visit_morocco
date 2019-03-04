@@ -1,11 +1,11 @@
-name:         "Middleman webpack"
-description:  "🏗 Scalable ready-to-use Middleman 4 template"
-host:         "http://gabrielecanepa.github.io/middleman-webpack"
+name:         "Sahara Journey"
+description:  "Experience the desert"
+host:         "http://aquellier.github.io/visit_morocco"
 keywords:     "middleman, template, yarn, webpack, babel, eslint, sass"
 thumbnail:    "banner.jpg"
 favicon:      "_favicon.svg"
 base_color:   "#FBC547"
-repository:   "https://github.com/gabrielecanepa/middleman-webpack"
+repository:   "https://github.com/antoinequellier/visit_morocco"
 license:      "https://gabriele.canepa.io/mit-license"
 geocoding:
   place:      "Lisbon, Portugal"
@@ -13,8 +13,8 @@ geocoding:
   longitude:  "9.2302437"
   region:     "PT-17"
 author:
-  name:       "Gabriele Canepa"
-  email:      "gabriele@canepa.io"
+  name:       "Antoine Quellier"
+  email:      "antoinecquellier@gmail.com"
   phone:      "+1-202-555-0130"
   website:    "https://gabriele.canepa.io"
   # Available social media tags: bitbucket dribbble facebook github gitlab instagram linkedin medium twitter

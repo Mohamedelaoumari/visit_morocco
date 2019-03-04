@@ -1,0 +1,65 @@
+// variables
+$card-height: 250px;
+
+.tour-card {
+  height: $card-height;
+  position: relative;
+  margin: 20px 0;
+
+  h4 {
+    padding: 1em;
+    color: $orange;
+  }
+  p {
+    font-size: 12px;
+  }
+  hr{
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+    border: 0;
+    background: $orange;
+  }
+
+  .card-footer {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0.5em;
+    color: $white;
+    border: none;
+    box-shadow: none;
+  }
+
+  .tour-card-background {
+    border-radius: 8px;
+    background-size: cover;
+    height: $card-height;
+    text-align: center;
+    transition: 0.5s ease;
+  }
+
+  .tour-card-hover {
+    opacity: 0;
+    transition: 0.5s ease;
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    width: 100%;
+  }
+
+  &:hover {
+    .tour-card-background {
+      opacity: 0.4;
+      transition: 0.5s ease;
+      cursor: pointer;
+      .card-footer {
+        opacity: 0;
+      }
+    }
+    .tour-card-hover {
+      opacity: 1;
+      transition: 0.5s ease;
+      bottom: 50px;
+    }
+  }
+}
