@@ -4,12 +4,22 @@
 }
 .contact-form {
   width: 100%;
-
+  margin-bottom: 5vh;
+  h2 {
+    color: $gray;
+    padding: 20px 0;
+  }
   input,
   input:checked {
     background: transparent;
     box-shadow: none;
     outline: none;
+  }
+
+  // Overwrite chrome autocomplete
+  input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: $gray;
   }
 
   .input-block {
@@ -21,8 +31,18 @@
     position: relative;
     margin-bottom: 20px;
     transition: all 0.3s ease-out;
-    &:focus {
-      background-color: red;
+
+    .form-control {
+      background-color: transparent;
+      border: medium none;
+      box-shadow: none;
+      color: $gray;
+      font-size: 18px;
+      height: 40px;
+      padding: 0;
+      position: relative;
+      top: -20px;
+      z-index: 2;
     }
 
     .form-control-label {
@@ -31,17 +51,21 @@
       position: absolute;
       left: 8px;
       top: 20px;
-      display: block;
       margin: 0;
       font-weight: 300;
       z-index: 1;
       color: #999;
       font-size: 18px;
       line-height: 10px;
-      .upper {
+      transition: 0.5s ease-in-out;
+    }
+
+    &.is-filled {
+      .form-control-label {
+        top: -5px;
         left: 2px;
-        top: 0px;
         font-size: 12px;
+        transition: 0.5s ease-in-out;
       }
     }
   }
@@ -55,29 +79,10 @@
       resize: none;
   }
 
-
-  .input-block .form-control {
-      background-color: transparent;
-      border: medium none;
-      border-radius: 0;
-      box-shadow: none;
-      color: #333;
-      font-size: 18px;
-      height: 40px;
-      padding: 0;
-      position: relative;
-      top: -20px;
-      z-index: 2;
-  }
-
-  .input-block .form-control:focus label {
-      top: 0;
-  }
-
   .square-button {
-      background-size: 100%;
-      background-image: linear-gradient(to bottom, $orange, $white);
-      color: #fff;
+      color: $white;
+      background-color: $orange;
+      opacity: 0.8;
       font-size: 26px;
       text-transform: uppercase;
       font-weight: 700;
@@ -90,9 +95,9 @@
       width: 100%;
       &:hover,
        {
-        background-image: linear-gradient(to bottom, $orange, $orange);
         cursor: pointer;
         transition: all 0.5s ease;
+        opacity: 1;
       }
   }
 }

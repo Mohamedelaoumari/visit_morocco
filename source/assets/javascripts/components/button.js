@@ -27,4 +27,4 @@ const changeButton = () => {
 };
 
 
-export default changeButton;
+export { changeButton };

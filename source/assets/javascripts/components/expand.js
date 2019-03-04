@@ -47,6 +47,6 @@ const addBehaviorToTogglers = () => {
   getTogglers().forEach(toggler => addOpenBehavior(toggler));
 };
 
-const initExpandTogglers = () => addBehaviorToTogglers();
-
-export default initExpandTogglers;
+export const initExpandTogglers = () => {
+  addBehaviorToTogglers();
+};
