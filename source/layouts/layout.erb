@@ -10,7 +10,9 @@
 
   <body>
     <%= partial 'pages/shared/navbar' %>
-    <%= yield %>
+    <div class="<%= 'page-wrapper' unless homepage? %>">
+      <%= yield %>
+    </div>
 
     <%= javascript_include_tag "bundle" %>
     <%= partial 'pages/shared/footer' %>
