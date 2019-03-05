@@ -1,3 +1,5 @@
+import 'jquery';
+import 'popper.js';
 import 'bootstrap';
 import { navbarScroll } from './components/navbar';
 import { initExpandTogglers } from './components/expand';
