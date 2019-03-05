@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: http://gabrielecanepa.github.io/middleman-webpack/sitemap.xml
+Sitemap: http://aquellier.github.io/visit_morocco/sitemap.xml
