@@ -63,7 +63,6 @@ page '/*.xml',  layout: false
 page '/*.json', layout: false
 page '/*.txt',  layout: false
 
-
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
 
@@ -119,9 +118,9 @@ activate :deploy do |deploy|
   # deploy.build_before  = true
 end
 
-["marrakech-chegaga",
-"high-atlas-mountains",
-"toubkal-mulhacen",
-"imperial-cities"].each do |name|
-  proxy "/tours/#{name}.html", "/tours/template.html", locals { tour_name: name }
+['marrakech-chegaga', 'high-atlas-mountains',
+ 'toubkal-mulhacen', 'imperial-cities'].each do |name|
+  proxy "/tours/#{name}.html",
+        '/tours/template.html',
+        locals: { tour_name: name }
 end
