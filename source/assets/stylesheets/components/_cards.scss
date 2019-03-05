@@ -36,6 +36,7 @@ $card-height: 250px;
     height: $card-height;
     text-align: center;
     transition: 0.5s ease;
+    z-index: -1;
   }
 
   .tour-card-hover {
@@ -49,14 +50,15 @@ $card-height: 250px;
 
   &:hover {
     .tour-card-background {
-      opacity: 0.4;
+      opacity: 0.5;
       transition: 0.5s ease;
-      cursor: pointer;
+      // cursor: pointer;
       .card-footer {
         opacity: 0;
       }
     }
     .tour-card-hover {
+      cursor: pointer;
       opacity: 1;
       transition: 0.5s ease;
       bottom: 50px;

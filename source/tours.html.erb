@@ -9,20 +9,20 @@
 
 <section>
     <div class="container">
+      <h3>Our Tours</h3>
       <div class="row">
         <% data.tours.each do |tour| %>
           <div class="col-xs-12 col-sm-6">
             <div class="tour-card">
-                <div class="tour-card-background"  style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(100,100,86,0.5)), url(<%= tour.picture %>)">
-                  <h4><%= tour.title %></h4>
-                  <hr>
-                  <div class="card-footer">
-                    <p><%= tour.summary %></p>
-                  </div>
-                </div">
-                <div class="tour-card-hover">
-                  <h5>View details</h5>
+              <div class="tour-card-background"  style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(100,100,86,0.5)), url(<%= tour.picture %>)">
+                <h4><%= tour.title %></h4>
+                <hr>
+                <div class="card-footer">
+                  <p><%= tour.summary %></p>
                 </div>
+              </div>
+              <div class="tour-card-hover">
+                <h5>View details</h5>
               </div>
             </div>
           </div>
