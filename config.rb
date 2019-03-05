@@ -114,6 +114,7 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.branch        = 'master'
-  deploy.build_before  = true
+  deploy.remote        = 'git@github.com:aquellier/Visit_morocco.git'
+  deploy.branch        = 'gh-pages'
+  # deploy.build_before  = true
 end
