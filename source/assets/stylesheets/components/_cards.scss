@@ -65,3 +65,10 @@ $card-height: 250px;
     }
   }
 }
+
+.team-card {
+  min-height: 250px;
+  text-align: center;
+  margin: 1em;
+  overflow: scroll;
+}
