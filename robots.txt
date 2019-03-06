@@ -1,4 +1,4 @@
 User-Agent: *
 Allow: /
 
-Sitemap: http://aquellier.github.io/visit_morocco/sitemap.xml
+Sitemap: www.sahara-journeys.com/sitemap.xml
