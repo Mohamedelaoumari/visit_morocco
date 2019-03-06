@@ -1,14 +1,17 @@
 .contact-wrap {
   justify-content: center;
   align-items: center;
-}
-.contact-form {
-  width: 100%;
-  margin-bottom: 5vh;
   h2 {
     color: $gray;
     padding: 20px 0;
   }
+  .contact-section {
+    padding: 16px;
+  }
+}
+.contact-form {
+  width: 100%;
+  margin-bottom: 5vh;
   input,
   input:checked {
     background: transparent;
