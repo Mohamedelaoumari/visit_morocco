@@ -5,7 +5,14 @@ body {
   margin: 0;
   overflow-x: hidden !important;
   min-height: 100vh;
+  p {
+    color: $gray;
+  }
 }
 .middleman-logo {
   width: 12rem;
+}
+
+.orange-text {
+  color: $orange;
 }
