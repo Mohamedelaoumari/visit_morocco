@@ -39,9 +39,6 @@ set :favicons, [
   }
 ]
 
-# Activate and configure extensions
-# https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
 activate :autoprefixer do |config|
   config.browsers = 'last 2 versions'
 end
