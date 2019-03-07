@@ -5,17 +5,6 @@
   p {
     opacity: 1;
   }
-  button {
-    color: $white;
-    transition: .4s ease;
-    opacity: 0.7;
-    cursor: pointer;
-    &:hover {
-      opacity: 1;
-      color: $white;
-      transition: .4s ease;
-    }
-  }
   i {
     height: 2rem;
   }
@@ -24,7 +13,7 @@
     top: 1rem;
   }
   .slick-prev {
-    position: absolute;
+    position: abssolute;
     left: -1rem;
     top: 1rem;
   }
@@ -35,7 +24,6 @@
     top: 1rem;
   }
 }
-
 .slick-dots {
   display: flex;
   justify-content: center;
@@ -44,29 +32,30 @@
   margin: 0;
   list-style-type: none;
 
-    li {
-      margin: 0 0.25rem;
-    }
+  li {
+    margin: 0 0.25rem;
+  }
 
-    button {
-      display: block;
-      width: 1rem;
-      height: 1rem;
-      padding: 0;
-      opacity: 1;
-      border: none;
-      border-radius: 100%;
-      border: 1px solid $white;
-      background-color: transparent;
+  button {
+    display: block;
+    width: 1rem;
+    height: 1rem;
+    padding: 0;
+    opacity: 1;
+    border-radius: 100%;
+    border: 1px solid $white;
+    background-color: transparent;
 
-      text-indent: -9999px;
+    text-indent: -9999px;
 
-      margin: 1rem;
-    }
+    margin: 1rem;
+  }
 
-    li.slick-active button {
-      background-color: $white;
-      &:focus {outline:0;}
-    }
+  li.slick-active button {
+    background-color: $white;
+    &:focus {outline:0;}
+  }
 
 }
+
+
