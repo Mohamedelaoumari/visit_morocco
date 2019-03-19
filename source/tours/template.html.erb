@@ -1,1 +1,38 @@
-<h1>Helloooo</h1>
+<div class="container">
+
+  <section class="flex-section">
+    <div class="col-xs-12 col-md-6">
+      <h4><%= selected_tour.title %> tour</h4>
+      <p><%= selected_tour.description_first %></p>
+      <p><%= selected_tour.description_second %></p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="itinerary-card" style="background-image: url(<%= selected_tour.picture %>)">
+      </div>
+    </div>
+  </section>
+
+  <section class="flex-section">
+    <div class="col-xs-12 col-md-4">
+      <div class="price-card">
+        <h1>Hello</h1>
+      </div>
+    </div>
+    <div class="col-xs-12 col-md-8">
+      <h3>Itinerary</h3>
+      <% selected_tour.days.each_with_index do |day, index|%>
+        <div class="day-title" data-toggle="collapse" data-target="#collapseDayDescription" aria-expanded="false" aria-controls="collapseDayDescription">
+          <h6><i class="fas fa-plus-circle"></i> Day <%= index +1 %> / <%= day[0] %></h6>
+        </div>
+        <div class="collapse" id="collapseDayDescription">
+          <div class="day-description">
+            <p><%= day[1] %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </section>
+
+</div>
+
+
