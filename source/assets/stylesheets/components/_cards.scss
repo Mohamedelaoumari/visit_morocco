@@ -79,3 +79,9 @@ $card-height: 250px;
 .price-card {
   background-color: white;
 }
+.team-card {
+  min-height: 250px;
+  text-align: center;
+  margin: 1em;
+  overflow: scroll;
+}

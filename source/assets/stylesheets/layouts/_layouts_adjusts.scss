@@ -1,6 +1,13 @@
 .page-wrapper {
   margin-top: 70px;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 100px);
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
 }
 
 .flex-section {

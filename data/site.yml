@@ -1,12 +1,11 @@
 name:         "Sahara Journey"
 description:  "Experience the desert"
-host:         "http://aquellier.github.io/visit_morocco"
+host:         "www.sahara-journeys.com"
 keywords:     "middleman, template, yarn, webpack, babel, eslint, sass"
 thumbnail:    "banner.jpg"
 favicon:      "_favicon.svg"
 base_color:   "#FBC547"
 repository:   "https://github.com/antoinequellier/visit_morocco"
-license:      "https://gabriele.canepa.io/mit-license"
 geocoding:
   place:      "Lisbon, Portugal"
   latitude:   "38.7437396"
@@ -16,6 +15,5 @@ author:
   name:       "Antoine Quellier"
   email:      "antoinecquellier@gmail.com"
   phone:      "+1-202-555-0130"
-  website:    "https://gabriele.canepa.io"
   # Available social media tags: bitbucket dribbble facebook github gitlab instagram linkedin medium twitter
-  github:     "gabrielecanepa"
+  github:     "aquellier"
