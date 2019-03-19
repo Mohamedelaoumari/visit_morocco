@@ -12,4 +12,16 @@
     </div>
   </div>
 
+  <div>
+    <% selected_tour.days.each_with_index do |day, index|%>
+      <div class="day-title" data-toggle="collapse" data-target="#collapseDayDescription" aria-expanded="false" aria-controls="collapseDayDescription"> Day <%= index +1 %> / <%= day[0] %></div>
+      <div class="collapse" id="collapseDayDescription">
+        <div class="">
+          <p><%= day[1] %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
+
+

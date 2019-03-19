@@ -2,13 +2,14 @@
   summary: "Forget all modern life stress and live an
             amazing Morocco luxury travel experience in the big dunes of
             Erg Chigaga in the sahara desert of Morocco."
-  days: "3"
+  duration: "3"
   slug: 'marrakech_chegaga'
   picture: "https://images.unsplash.com/photo-1544494232-e99f65a9c605?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
-  description: "Erg Chigaga luxury desert camp package starting from Marrakech
+  description_first: "Erg Chigaga luxury desert camp package starting from Marrakech
                 will allow you to forget all modern life stress and live an
                 amazing Morocco luxury travel experience in the big dunes of
-                Erg Chigaga in the sahara desert of Morocco. During your luxury
+                Erg Chigaga in the sahara desert of Morocco."
+  description_second: "During your luxury
                 desert tour, you will spend the 1st night on your way to the
                 desert to enjoy beautiful landscapes between Marrakech and Erg
                 Chigaga luxury desert camp. This can be changed if you are
@@ -21,6 +22,26 @@
                 You will have everything like you are in a 5 stars hotel in the
                 middle of nowhere. The food is also delicious and typically Moroccan.
                 It's prepared by the friendly Berber team."
+  days:
+    Marrakech-tizi n’tichka-teloute kasbah-ait ben haddou kasbah-ourazazate-agdz: |+
+
+                We will collect you from your Marrakech accommodation (Riad or hotel)
+                at 9 am with a private and air-conditioned transportation then start
+                your desert tour by heading towards the High Atlas and crossing
+                Tizi n’tichka Pass 2260m.
+
+                We follow the one thousand kasbahs road via ounila valley till arriving
+                to the Kasbah of teloute, an ancient gathering of old trading caravans
+                coming from the large sahara desert.
+
+                Afterwards we visit The earthen Kasbah Of Ait ben Haddou classified as
+                UNSECO world Heritage Site and a backdrop of films location as well.
+                We take a break to have lunch in Ait ben Haddou Site, we continue our
+                journey crossing the Mountains of Anti-atlas and Ourazazate site Or the
+                Hollywood of Africa. Arriving to Agdz, which is a small town located
+                among palmtree groves, you spend the overnight in one of well-selected
+                accommadation with evening and morning meals included.
+
 
 - title: "High Atlas Mountains"
   summary: "Discover the highest peaks of Morocco and connect with nature in this
