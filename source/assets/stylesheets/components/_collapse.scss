@@ -1,0 +1,16 @@
+.day-title {
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: $orange;
+  color: white;
+  margin-bottom: 20px;
+  h6 {
+    margin: 0;
+  }
+}
+
+.day-description {
+  border: 1px solid $gray;
+}
