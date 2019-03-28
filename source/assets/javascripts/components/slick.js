@@ -7,8 +7,8 @@ const initSlider = () => {
     arrows: true,
     dots: true,
     dotsClass: 'slick-dots',
-    prevArrow: '<button class="btn btn-link p-2 slider-button slick-arrow slick-prev"><i class="fas fa-chevron-circle-left fa-lg"></i></button>',
-    nextArrow: '<button class="btn btn-link p-2 slider-button slick-arrow slick-next"><i class="fas fa-chevron-circle-right fa-lg"></i></button>'
+    prevArrow: '<button class="btn btn-link p-2 slider-button slick-arrow slick-prev"><i class="fas fa-chevron-circle-left fa-lg white-text"></i></button>',
+    nextArrow: '<button class="btn btn-link p-2 slider-button slick-arrow slick-next"><i class="fas fa-chevron-circle-right fa-lg white-text"></i></button>'
   });
 };
 

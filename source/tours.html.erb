@@ -1,8 +1,8 @@
 <% set_meta_tags title: data.site.name + ": " + data.site.description,
                  full_title: false %>
-<div class="banner tours">
-  <div class="container banner-text">
-    <h1>SAHARA JOURNEY</h1>
+<div class="banner main tours">
+  <div class="container">
+    <h1>SAHARA JOURNEYS</h1>
     <p>Experience the desert</p>
   </div>
 </div>
@@ -22,7 +22,7 @@
                 </div>
               </div>
               <div class="tour-card-hover">
-                <h5><%= link_to "View details", "/tours/#{tour.slug}", class: "square-button" %></h5>
+                <h5><%= link_to "View details", "/tours/#{tour.slug}" %></h5>
               </div>
             </div>
           </div>
