@@ -74,7 +74,12 @@ $card-height: 250px;
   width: 100%;
   border-radius: 3px;
   background-size: cover;
-  margin-top: 30px;
+  margin-top: 60px;
+}
+
+.trip-description {
+  max-height: 400px;
+  overflow: scroll;
 }
 
 .price-card {
@@ -86,14 +91,15 @@ $card-height: 250px;
   text-align: center;
   padding: 15px;
   overflow: scroll;
+  position: relative;
   hr{
     width: 100px;
     height: 1px;
     margin: 20px auto;
     border: 0;
     background: $gray;
+    margin-bottom: 40px;
   }
-
 }
 .team-card {
   min-height: 250px;
