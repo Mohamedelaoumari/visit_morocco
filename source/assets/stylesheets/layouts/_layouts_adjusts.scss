@@ -13,3 +13,8 @@
 .flex-section {
   display: flex;
 }
+
+.trip-description {
+  max-height: 400px;
+  overflow: scroll;
+}

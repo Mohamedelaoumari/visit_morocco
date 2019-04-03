@@ -81,13 +81,14 @@ $card-height: 250px;
   border: 1px solid $light-gray;
   background-color: white;
   height: 200px;
-  display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 15px;
+  overflow: scroll;
   hr{
     width: 100px;
-    height: 3px;
+    height: 1px;
     margin: 20px auto;
     border: 0;
     background: $gray;
