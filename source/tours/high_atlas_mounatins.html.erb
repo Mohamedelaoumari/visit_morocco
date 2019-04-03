@@ -1,0 +1,57 @@
+<div class="container">
+
+  <section class="row text-justify">
+    <div class="col-xs-12 col-md-6">
+      <h4><%= data.high_atlas_mountains.title %> tour</h4>
+      <p><%= data.high_atlas_mountains.description_first %></p>
+      <p><%= data.high_atlas_mountains.description_second %></p>
+    </div>
+    <div class="col-xs-12 col-md-6">
+      <div class="itinerary-card" style="background-image: url(<%= data.high_atlas_mountains.picture %>)">
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-xs-12 col-md-8">
+      <h3>Itinerary</h3>
+      <% data.high_atlas_mountains.days.each_with_index do |day, index|%>
+        <div class="day-title" data-toggle="collapse" data-target="#collapseDayDescription<%= index %>" aria-expanded="false" aria-controls="collapseDayDescription">
+          <h6><i class="fas fa-plus-circle"></i> Day <%= index +1 %> / <%= day[0] %></h6>
+        </div>
+        <div class="collapse" id="collapseDayDescription<%= index %>">
+          <div class="day-description text-justify">
+            <p><%= day[1] %></p>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <div class="price-card">
+        <%= link_to "Book now", "/contact", class: "oval-button gray" %>
+      </div>
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-xs-12 col-md-8">
+      <h6>Included in this trip: </h6>
+      <ul>
+        <% data.high_atlas_mountains.included.each do |item|%>
+          <li><%= item[0] %></li>
+        <% end %>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-md-4">
+      <h6>Not included: </h6>
+      <ul>
+        <% data.high_atlas_mountains.not_included.each do |item|%>
+          <li><%= item[0] %></li>
+        <% end %>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+

@@ -85,9 +85,9 @@ activate :deploy do |deploy|
   # deploy.build_before  = true
 end
 
-['marrakech_chegaga', 'high_atlas_mountains',
- 'toubkal_mulhacen', 'imperial_cities'].each do |name|
-  proxy "/tours/#{name}.html",
-        '/tours/template.html',
-        locals: { tour_name: name }
-end
+# ['marrakech_chegaga', 'high_atlas_mountains',
+#  'toubkal_mulhacen', 'imperial_cities'].each do |name|
+#   proxy "/tours/#{name}.html",
+#         '/tours/template.html',
+#         locals: { tour_name: name }
+# end
