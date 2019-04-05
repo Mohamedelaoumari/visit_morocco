@@ -80,9 +80,10 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
+  deploy.host          = 'www.example.com'
   deploy.remote        = 'git@github.com:aquellier/Visit_morocco.git'
   deploy.branch        = 'gh-pages'
-  # deploy.build_before  = true
+  deploy.build_before  = true
 end
 
 # ['marrakech_chegaga', 'high_atlas_mountains',
