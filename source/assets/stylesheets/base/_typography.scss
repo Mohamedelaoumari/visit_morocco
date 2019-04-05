@@ -1,5 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Fahkwang|Montserrat');
 
+html {
+  font-size: 1rem;
+}
+
+// @include media-breakpoint-up(sm) {
+//   html {
+//     font-size: 1.2rem;
+//   }
+
+//   h1 {
+//     margin: 0;
+//     color: $white;
+//     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//     font-weight: bold;
+//     letter-spacing: 4px;
+//     font-size: 16px;
+//   }
+// }
+
+// @include media-breakpoint-up(md) {
+//   html {
+//     font-size: 1.4rem;
+//   }
+
+//   h1 {
+//     margin: 0;
+//     color: $white;
+//     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//     font-weight: bold;
+//     letter-spacing: 24px;
+//     font-size: 36px;
+//   }
+// }
+
+// @include media-breakpoint-up(lg) {
+//   html {
+//     font-size: 1.6rem;
+//   }
+// }
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
