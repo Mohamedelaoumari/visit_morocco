@@ -2,8 +2,8 @@ import $ from 'jquery';
 import 'slick-carousel';
 import 'slick-carousel/slick/slick.css';
 
-const initSlider = () => {
-  $('.single-item').slick({
+const initCommentsSlider = () => {
+  $('.single-comment-item').slick({
     arrows: true,
     dots: true,
     dotsClass: 'slick-dots',
@@ -12,4 +12,14 @@ const initSlider = () => {
   });
 };
 
-export { initSlider };
+const initToursSlider = () => {
+  $('.centered-slider').slick({
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    // autoplay: true,
+    // autoplaySpeed: 2000,
+  });
+};
+
+export { initToursSlider, initCommentsSlider };
