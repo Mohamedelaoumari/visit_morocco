@@ -1,3 +1,8 @@
+.center-slider {
+  .slick-slider {
+    height: 300px;
+  }
+}
 .single-slider {
   margin-right: -6rem;
   display: inline-block;
@@ -13,7 +18,7 @@
     top: 1rem;
   }
   .slick-prev {
-    position: abssolute;
+    position: absolute;
     left: -1rem;
     top: 1rem;
   }
@@ -24,6 +29,11 @@
     top: 1rem;
   }
 }
+
+.slick-slide {
+    margin: 2rem 2rem;
+  }
+
 .slick-dots {
   display: flex;
   justify-content: center;

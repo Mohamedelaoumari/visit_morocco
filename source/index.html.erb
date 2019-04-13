@@ -15,27 +15,26 @@
   </div>
 </div>
 
-<div class="h-75 p-3">
-  <div class="container">
+<hr>
+  <div class="carousel-wrapper text-center">
     <h3>Our Tours</h3>
     <div class="container single-slider centered-slider">
       <% data.tours.each do |tour| %>
-            <div class="tour-card">
-              <div class="tour-card-background  col-xs-6 offset-xs-3"  style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(100,100,86,0.5)), url(<%= tour.picture %>)">
-                <h4><%= tour.title %></h4>
-                <hr>
-                <div class="card-footer">
-                  <p><%= tour.summary %></p>
-                </div>
-              </div>
-              <div class="tour-card-hover">
-                <h5><%= link_to "View details", "/tours/#{tour.slug}" %></h5>
-              </div>
+        <div class="tour-card">
+          <div class="tour-card-background"  style="background-image: linear-gradient(rgba(0,0,0,0.6),rgba(100,100,86,0.5)), url(<%= tour.picture %>)">
+            <h4><%= tour.title %></h4>
+            <hr>
+            <div class="card-footer">
+              <p><%= tour.summary %></p>
             </div>
+          </div>
+          <div class="tour-card-hover">
+            <h5><%= link_to "View details", "/tours/#{tour.slug}" %></h5>
+          </div>
+        </div>
       <% end %>
     </div>
   </div>
-</div>
 
 <div class="banner medium" style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
     url(https://images.unsplash.com/photo-1545167496-31b3aa75296c?ixlib=rb-1.2.1&ixi=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);">
