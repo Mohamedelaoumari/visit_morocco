@@ -80,7 +80,7 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
-  deploy.host          = 'www.sahara-journeys.com'
+  deploy.host          = 'www.idealmorocco.com'
   deploy.remote        = 'git@github.com:aquellier/Visit_morocco.git'
   deploy.branch        = 'gh-pages'
   deploy.build_before  = true
