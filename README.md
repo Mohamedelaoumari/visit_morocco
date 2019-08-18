@@ -1,1 +1,1 @@
-Middleman application generated with [middleman-webpack](https://github.com/gabrielecanepa/middleman-webpack), created by [Gabriele Canepa](https://github.com/gabrielecanepa).
+Static website created for a travel agency in Morocco
