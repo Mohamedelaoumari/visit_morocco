@@ -1,6 +1,6 @@
-name:         "Sahara Journey"
+name:         "Ideal Morocco"
 description:  "Experience the desert"
-host:         "www.sahara-journeys.com"
+host:         "www.idealmorocco.com"
 keywords:     "middleman, template, yarn, webpack, babel, eslint, sass"
 thumbnail:    "banner.jpg"
 favicon:      "_favicon.svg"
