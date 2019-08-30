@@ -34,8 +34,8 @@
 
 .navbar-zagora .navbar-zagora-actions .navbar-zagora-link {
   margin-left: 2em;
-  // color: $white;
   transition: 0.3s;
+  font-weight: lighter;
   &:hover {
     text-decoration: none;
     opacity: .7;
